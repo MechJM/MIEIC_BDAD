@@ -60,7 +60,7 @@ create table ReparacaoPeca
 (
     idReparacao int references Reparacao(idReparacao) not null,
     idPeca int references Peca(idPeca) not null,
-    quantidade int check (quantidade >= 0)
+    quantidade int check (quantidade >= 0),
     primary key (idReparacao,idPeca)
 );
 drop table if exists PecaModelo;
