@@ -34,7 +34,7 @@ CREATE TABLE Funcionario(
 );
 CREATE TABLE Enfermeiro(
     Nome VARCHAR(50), 
-    NIF INTEGER primary key not null check (NIF > 0), 
+    NIF INTEGER primary key references Funcionario(NIF) on update cascade on delete cascade not null check (NIF > 0), 
     Morada VARCHAR(300), 
     Telefone INTEGER check (Telefone > 0),
     idFuncionario INTEGER unique not null check (idFuncionario > 0), 
@@ -44,7 +44,7 @@ CREATE TABLE Enfermeiro(
 );
 CREATE TABLE Medico(
     Nome VARCHAR(50), 
-    NIF INTEGER primary key not null check (NIF > 0), 
+    NIF INTEGER primary key references Funcionario(NIF) on update cascade on delete cascade not null check (NIF > 0), 
     Morada VARCHAR(300), 
     Telefone INTEGER check (Telefone > 0),
     idFuncionario INTEGER unique not null check (idFuncionario > 0), 
@@ -74,7 +74,7 @@ CREATE TABLE Servico(
     unique (Data,Hora,idCliente)
 );
 CREATE TABLE Consulta(
-    idServico INTEGER primary key not null check (idServico > 0), 
+    idServico INTEGER primary key references Servico(idServico) on update cascade on delete cascade not null check (idServico > 0), 
     Data CHAR(10), 
     Hora CHAR(5), 
     Custo FLOAT check (Custo > 0), 
@@ -86,7 +86,7 @@ CREATE TABLE Consulta(
     unique (Data,Hora,Medico)
 );
 CREATE TABLE Cirurgia(
-    idServico INTEGER primary key not null check (idServico > 0), 
+    idServico INTEGER primary key references Servico(idServico) on update cascade on delete cascade not null check (idServico > 0), 
     Data CHAR(10), 
     Hora CHAR(5), 
     Custo FLOAT check (Custo > 0), 
@@ -96,7 +96,7 @@ CREATE TABLE Cirurgia(
     unique (Data,Hora,idCliente)
 );
 CREATE TABLE Analise(
-    idServico INTEGER primary key not null check (idServico > 0), 
+    idServico INTEGER primary key references Servico(idServico) on update cascade on delete cascade not null check (idServico > 0), 
     Data CHAR(10), 
     Hora CHAR(5), 
     Custo FLOAT check (Custo > 0), 
