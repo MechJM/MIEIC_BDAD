@@ -108,18 +108,18 @@ INSERT INTO Servico VALUES(8, '05/04/2020','16:30',150,3);
 INSERT INTO Servico VALUES(9, '10/05/2020','14:30',20,4);
 INSERT INTO Servico VALUES(10, '12/05/2020','15:00',20,6);
 
-INSERT INTO Consulta VALUES(9, '10/05/2020','14:30',20,4,NULL,NULL,13);
-INSERT INTO Consulta VALUES(10, '12/05/2020','15:00',20,6,NULL,NULL,17);
-INSERT INTO Consulta VALUES(3, '05/04/2020', '09:00', 35,7,NULL,NULL,19);
-INSERT INTO Consulta VALUES(2, '31/12/2020', '10:00', 40,2,NULL,NULL,20);
+INSERT INTO Consulta VALUES(9, '10/05/2020','14:30',20,4,'Arritmia','Fadiga,Falta de ar',13);
+INSERT INTO Consulta VALUES(10, '12/05/2020','15:00',20,6,'Hipertensão','Obesidade',17);
+INSERT INTO Consulta VALUES(3, '05/04/2020', '09:00', 35,7,'Lesão Ocular','Dor no olho direito, Diabetes',19);
+INSERT INTO Consulta VALUES(2, '31/12/2020', '10:00', 40,2,'Arritmia','Dor no olho direito, Diabetes',20);
 
 INSERT INTO Cirurgia VALUES(4, '07/04/2020','09:30', 120,7,NULL,'Perna esquerda');
 INSERT INTO Cirurgia VALUES(7, '07/05/2020','17:00',120,9,NULL,'Pulmão');
 INSERT INTO Cirurgia VALUES(8, '05/04/2020','16:30',150,3,NULL,'Coração');
 
-INSERT INTO Analise VALUES(1, '24/05/2020', '14:00', 100, 5);
-INSERT INTO Analise VALUES(5, '17/04/2020','22:00', 80,8);
-INSERT INTO Analise VALUES(6, '05/05/2020','20:00',80,10);
+INSERT INTO Análise VALUES(1, '24/05/2020', '14:00', 100, 6, 'Arritmia'  , 'Fadiga,Falta de ar',9);
+INSERT INTO Análise VALUES(5, '17/04/2020','22:00', 80,8,'Hipertensão' , 'Obesidade',14);
+INSERT INTO Análise VALUES(6, '05/05/2020','20:00',80,10,'Lesão Ocular' , 'Dor no olho direito, Diabetes',15);
 
 INSERT INTO Realizam VALUES(2,4);
 INSERT INTO Realizam VALUES(7,7);
