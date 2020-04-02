@@ -44,7 +44,7 @@ CREATE TABLE Enfermeiro
     Telefone INTEGER check (Telefone > 0),
     idFuncionario INTEGER unique not null check (idFuncionario > 0),
     Departamento VARCHAR(20) references Departamento(nome) on update cascade on delete cascade not null,
-    Injecoes_Administradas INTEGER not null check (Injecoes_Administradas >= 0),
+    Injecoes_Administradas INTEGER check (Injecoes_Administradas >= 0),
     unique (NIF,Departamento)
 );
 CREATE TABLE Medico
