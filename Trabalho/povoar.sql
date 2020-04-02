@@ -40,16 +40,16 @@ INSERT INTO Funcionario VALUES ('Luana Andrade',847144854, 'Rua Comandante Augus
 
 --Falta injecoes administradas
 
-INSERT INTO Enfermeiro VALUES ('Asdrubál Silva',130437866,'Rua dos Carvalhos 44' ,964118989, 1, 'Urgências',NULL);
-INSERT INTO Enfermeiro VALUES ('António Lima',123968184, 'Praça do Bonfim 30' ,934719368,10,'Cardiologia',NULL);
-INSERT INTO Enfermeiro VALUES ('Margarida Sá',440837476, 'Rua dos Vingadores 76',917368886,12,'Pediatria',NULL);
-INSERT INTO Enfermeiro VALUES ('Juliana Santos',132845751, 'Praça da República 50' ,912574702,11,'Cardiologia',NULL);
-INSERT INTO Enfermeiro VALUES ('Sofia Borges',325437259, 'Rua Pedro-Hispano 21',937982340,3, 'Urgências',NULL);
-INSERT INTO Enfermeiro VALUES ('Miguel Lopes',564680097, 'Rua de Cedofeita 45' ,931154433,8,'Pneumologia',NULL);
-INSERT INTO Enfermeiro VALUES ('Joana Alves',799642630, 'Rua do Varão 60' ,935861728,5, 'Urgências',NULL);
-INSERT INTO Enfermeiro VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral' ,914837993,14,'Pediatria',NULL);
-INSERT INTO Enfermeiro VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftamologia', NULL);
-INSERT INTO Enfermeiro VALUES ('Ana Gonçalves',385970256, 'Rua Sem Fim 89' ,938710866,18,'Psiquiatria', NULL);
+INSERT INTO Enfermeiro VALUES ('Asdrubál Silva',130437866,'Rua dos Carvalhos 44' ,964118989, 1, 'Urgências',0);
+INSERT INTO Enfermeiro VALUES ('António Lima',123968184, 'Praça do Bonfim 30' ,934719368,10,'Cardiologia',5);
+INSERT INTO Enfermeiro VALUES ('Margarida Sá',440837476, 'Rua dos Vingadores 76',917368886,12,'Pediatria',35);
+INSERT INTO Enfermeiro VALUES ('Juliana Santos',132845751, 'Praça da República 50' ,912574702,11,'Cardiologia',250);
+INSERT INTO Enfermeiro VALUES ('Sofia Borges',325437259, 'Rua Pedro-Hispano 21',937982340,3, 'Urgências',15);
+INSERT INTO Enfermeiro VALUES ('Miguel Lopes',564680097, 'Rua de Cedofeita 45' ,931154433,8,'Pneumologia',20);
+INSERT INTO Enfermeiro VALUES ('Joana Alves',799642630, 'Rua do Varão 60' ,935861728,5, 'Urgências',98);
+INSERT INTO Enfermeiro VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral' ,914837993,14,'Pediatria',47);
+INSERT INTO Enfermeiro VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftamologia', 22);
+INSERT INTO Enfermeiro VALUES ('Ana Gonçalves',385970256, 'Rua Sem Fim 89' ,938710866,18,'Psiquiatria', 137);
 
 
 INSERT INTO Medico VALUES ('Pedro Silva',623832096,'Rua das Flores 73' ,962677726,2, 'Urgências','Medicina Física',NULL);
