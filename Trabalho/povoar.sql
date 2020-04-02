@@ -22,7 +22,7 @@ INSERT INTO Funcionario VALUES ('Pedro Silva',623832096,'Rua das Flores 73' ,962
 INSERT INTO Funcionario VALUES ('Sofia Borges',325437259, 'Rua Pedro-Hispano 21' ,937982340,3, 'Urgências');
 INSERT INTO Funcionario VALUES ('Domingo Domingues',946885253, 'Rua 5 de Outubro 123' ,931360537,4, 'Urgências');
 INSERT INTO Funcionario VALUES ('Joana Alves',799642630, 'Rua do Varão 60' ,935861728,5, 'Urgências');
-INSERT INTO Funcionario VALUES ('Luís Silva',130437865,'Rua Álvares Cabral 50' ,969402024,6,'Pneumologia');
+INSERT INTO Funcionario VALUES ('Luís Silva',130437867,'Rua Álvares Cabral 50' ,969402024,6,'Pneumologia');
 INSERT INTO Funcionario VALUES ('Miguel Azevedo',997395948, 'Rua do Miguel Jordão 89' ,966089679,7,'Pneumologia');
 INSERT INTO Funcionario VALUES ('Miguel Lopes',564680097, 'Rua de Cedofeita 45' ,931154433,8,'Pneumologia');
 INSERT INTO Funcionario VALUES ('Joaquim Lopes',874747711, 'Rua Miguel Bombarda 76' ,931513214,9,'Cardiologia');
@@ -43,7 +43,7 @@ INSERT INTO Funcionario VALUES ('Luana Andrade',847144854, 'Rua Comandante Augus
 INSERT INTO Enfermeiro VALUES ('Asdrubál Silva',130437866,'Rua dos Carvalhos 44' ,964118989, 1, 'Urgências',0);
 INSERT INTO Enfermeiro VALUES ('António Lima',123968184, 'Praça do Bonfim 30' ,934719368,10,'Cardiologia',5);
 INSERT INTO Enfermeiro VALUES ('Margarida Sá',440837476, 'Rua dos Vingadores 76',917368886,12,'Pediatria',35);
-INSERT INTO Enfermeiro VALUES ('Juliana Santos',132845751, 'Praça da República 50' ,912574702,11,'Cardiologia',250);
+INSERT INTO Enfermeiro VALUES ('Juliana Santos',132845751, 'Praça da República 50',912574702,11,'Cardiologia',250);
 INSERT INTO Enfermeiro VALUES ('Sofia Borges',325437259, 'Rua Pedro-Hispano 21',937982340,3, 'Urgências',15);
 INSERT INTO Enfermeiro VALUES ('Miguel Lopes',564680097, 'Rua de Cedofeita 45' ,931154433,8,'Pneumologia',20);
 INSERT INTO Enfermeiro VALUES ('Joana Alves',799642630, 'Rua do Varão 60' ,935861728,5, 'Urgências',98);
@@ -52,8 +52,8 @@ INSERT INTO Enfermeiro VALUES ('João Rocha',960954509, 'Avenida da Boavista 267
 INSERT INTO Enfermeiro VALUES ('Ana Gonçalves',385970256, 'Rua Sem Fim 89' ,938710866,18,'Psiquiatria', 137);
 
 
-INSERT INTO Medico VALUES ('Pedro Silva',623832096,'Rua das Flores 73' ,962677726,2, 'Urgências','Medicina Física',NULL);
-INSERT INTO Medico VALUES ('Domingo Domingues',946885253, 'Rua 5 de Outubro 123' ,931360537,4, 'Urgências' , 'Anestesiologia',NULL);
+INSERT INTO Medico VALUES ('Pedro Silva',623832096,'Rua das Flores 73' ,962677726,2, 'Urgências','Urgências',NULL);
+INSERT INTO Medico VALUES ('Domingo Domingues',946885253, 'Rua 5 de Outubro 123' ,931360537,4, 'Urgências' , 'Urgências',NULL);
 INSERT INTO Medico VALUES ('Luís Silva',130437866,'Rua Álvares Cabral 50 ',969402024,6,'Pneumologia','Pneumologia',NULL);
 INSERT INTO Medico VALUES ('Miguel Azevedo',997395948, 'Rua do Miguel Jordão 89' ,966089679,7,'Pneumologia','Pneumologia',NULL);
 INSERT INTO Medico VALUES ('Joaquim Lopes',874747711, 'Rua Miguel Bombarda 76' ,931513214,9,'Cardiologia','Cardiologia',NULL);
@@ -86,16 +86,16 @@ INSERT INTO Horario VALUES(20,20, 'Sábado;Domingo' ,'Segunda;Terça;Quarta;Quin
 
 
 
-INSERT INTO Equipamento VALUES(1,NULL,20);
-INSERT INTO Equipamento VALUES(2,NULL,5);
-INSERT INTO Equipamento VALUES(3,NULL,1);
-INSERT INTO Equipamento VALUES(4,NULL,4);
-INSERT INTO Equipamento VALUES(5,NULL,100);
-INSERT INTO Equipamento VALUES(6,NULL,13);
-INSERT INTO Equipamento VALUES(7,NULL,1);
-INSERT INTO Equipamento VALUES(8,NULL,5);
-INSERT INTO Equipamento VALUES(9,NULL,7);
-INSERT INTO Equipamento VALUES(10,NULL,50);
+INSERT INTO Equipamento VALUES(1,'Imagiologia',20);
+INSERT INTO Equipamento VALUES(2,'Imagiologia',5);
+INSERT INTO Equipamento VALUES(3,'Prótese',1);
+INSERT INTO Equipamento VALUES(4,'Prótese',4);
+INSERT INTO Equipamento VALUES(5,'Ferramenta Cirúrgica',100);
+INSERT INTO Equipamento VALUES(6,'Ferramenta Cirúrgica',13);
+INSERT INTO Equipamento VALUES(7,'Ferramenta Cirúrgica',1);
+INSERT INTO Equipamento VALUES(8,'Termómetro',5);
+INSERT INTO Equipamento VALUES(9,'Termómetro',7);
+INSERT INTO Equipamento VALUES(10,'Ferramenta Cirúrgica',50);
 
 INSERT INTO Servico VALUES(1, '24/05/2020', '14:00', 100, 5);
 INSERT INTO Servico VALUES(2, '31/12/2020', '10:00', 40,2);
@@ -129,15 +129,15 @@ INSERT INTO Auxilia VALUES(1,4);
 INSERT INTO Auxilia VALUES(10,7);
 INSERT INTO Auxilia VALUES(8,8);
 
-INSERT INTO Usado_EM VALUES(NULL,4);
-INSERT INTO Usado_EM VALUES(NULL,4);
-INSERT INTO Usado_EM VALUES(NULL,7);
-INSERT INTO Usado_EM VALUES(NULL,7);
-INSERT INTO Usado_EM VALUES(NULL,8);
-INSERT INTO Usado_EM VALUES(NULL,8);
-INSERT INTO Usado_EM VALUES(NULL,1);
-INSERT INTO Usado_EM VALUES(NULL,5);
-INSERT INTO Usado_EM VALUES(NULL,6);
-INSERT INTO Usado_EM VALUES(NULL,10);
+INSERT INTO Usado_EM VALUES(1,4);
+INSERT INTO Usado_EM VALUES(2,4);
+INSERT INTO Usado_EM VALUES(8,7);
+INSERT INTO Usado_EM VALUES(2,7);
+INSERT INTO Usado_EM VALUES(5,8);
+INSERT INTO Usado_EM VALUES(6,8);
+INSERT INTO Usado_EM VALUES(7,1);
+INSERT INTO Usado_EM VALUES(7,5);
+INSERT INTO Usado_EM VALUES(9,6);
+INSERT INTO Usado_EM VALUES(4,10);
 
 
