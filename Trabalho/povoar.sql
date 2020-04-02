@@ -38,7 +38,6 @@ INSERT INTO Funcionario VALUES ('Ana Gonçalves',385970256, 'Rua Sem Fim 89' ,93
 INSERT INTO Funcionario VALUES ('Marisa Cruz',578230859, 'Rua Pequena 10' ,935861728,19,'Oncologia');
 INSERT INTO Funcionario VALUES ('Luana Andrade',847144854, 'Rua Comandante Augusto Cardoso' ,911035333,20,'Oncologia');
 
---Falta injecoes administradas
 
 INSERT INTO Enfermeiro VALUES ('Asdrubál Silva',130437866,'Rua dos Carvalhos 44' ,964118989, 1, 'Urgências',0);
 INSERT INTO Enfermeiro VALUES ('António Lima',123968184, 'Praça do Bonfim 30' ,934719368,10,'Cardiologia',5);
@@ -117,9 +116,9 @@ INSERT INTO Cirurgia VALUES(4, '07/04/2020','09:30', 120,7,NULL,'Perna esquerda'
 INSERT INTO Cirurgia VALUES(7, '07/05/2020','17:00',120,9,NULL,'Pulmão');
 INSERT INTO Cirurgia VALUES(8, '05/04/2020','16:30',150,3,NULL,'Coração');
 
-INSERT INTO Análise VALUES(1, '24/05/2020', '14:00', 100, 6, 'Arritmia'  , 'Fadiga,Falta de ar',9);
-INSERT INTO Análise VALUES(5, '17/04/2020','22:00', 80,8,'Hipertensão' , 'Obesidade',14);
-INSERT INTO Análise VALUES(6, '05/05/2020','20:00',80,10,'Lesão Ocular' , 'Dor no olho direito, Diabetes',15);
+INSERT INTO Analise VALUES(1,'07/04/2020','14:00',20,4,NULL,NULL,'09/04/2020',9,9);
+INSERT INTO Analise VALUES(5,'17/04/2020','09:30',150,6,NULL,NULL,'19/04/2020',14,10);
+INSERT INTO Analise VALUES(6,'05/05/2020','12:30',40,7,NULL,NULL,'07/05/2020',15,3);
 
 INSERT INTO Realizam VALUES(2,4);
 INSERT INTO Realizam VALUES(7,7);
