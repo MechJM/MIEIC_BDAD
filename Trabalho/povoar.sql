@@ -59,30 +59,30 @@ INSERT INTO Medico VALUES ('Miguel Azevedo',997395948, 'Rua do Miguel Jordão 89
 INSERT INTO Medico VALUES ('Joaquim Lopes',874747711, 'Rua Miguel Bombarda 76' ,931513214,9,'Cardiologia','Cardiologia',NULL);
 INSERT INTO Medico VALUES ('António César',209765575, 'Rua D. Sebastião 33' ,919184876,13,'Pediatria','Pediatria',NULL);
 INSERT INTO Medico VALUES ('Miguel Taveira',345631564, 'Avenida do Ouro 1' ,931154433,15,'Oftamologia','Oftamologia',NULL);
-INSERT INTO Medico VALUES ('Marta Correia',874747711, 'Praça Mouzinho de Alburqueque 45' ,936799890,17,'Psiquiatria','Psiquiatria',NULL);
+INSERT INTO Medico VALUES ('Marta Correia',874747712, 'Praça Mouzinho de Alburqueque 45' ,936799890,17,'Psiquiatria','Psiquiatria',NULL);
 INSERT INTO Medico VALUES ('Marisa Cruz',578230859, 'Rua Pequena 10 ',935861728,19,'Oncologia','Oncologia',NULL);
 INSERT INTO Medico VALUES ('Luana Andrade',847144854, 'Rua Comandante Augusto Cardoso' ,911035333,20,'Oncologia', 'Oncologia',NULL);
 
-INSERT INTO Horario VALUES(1,1, 'Sábado;Domingo', 'Segunda;Terça;Quarta;Quinta;Sexta,Noturno');
-INSERT INTO Horario VALUES(2,2, 'Terça;Quinta', 'Segunda;Quarta;Sexta;Sábado;Domingo, Noturno');
-INSERT INTO Horario VALUES(3,3, 'Segunda;Terça', 'Quarta;Quinta;Sexta;Sábado;Domingo,Diurno');
-INSERT INTO Horario VALUES(4,4, 'Terça;Quarta', 'Segunda;Quinta;Sexta;Sábado;Domingo,Diurno');
-INSERT INTO Horario VALUES(5,5, 'Quinta;Sexta', 'Segunda;Terça;Quarta;Sábado;Domingo,Misto');
-INSERT INTO Horario VALUES(6,6, 'Quinta;Sexta', 'Segunda;Terça;Quarta;Sábado;Domingo,Misto');
-INSERT INTO Horario VALUES(7,7, 'Segunda;Terça' , 'Quarta;Quinta;Sexta;Sábado;Domingo,Diurno');
-INSERT INTO Horario VALUES(8,8, 'Sexta;Sábado' ,'Segunda;Terça;Quarta;Quinta;Domingo,Noturno');
-INSERT INTO Horario VALUES(9,9, 'Sexta;Sábado', 'Segunda;Terça;Quarta;Quinta;Sexta;Sábado;Domingo,Misto');
-INSERT INTO Horario VALUES(10,10, 'Segunda; Domingo' ,'Terça;Quarta;Quinta;Sexta;Sábado,Misto');
-INSERT INTO Horario VALUES(11,11, 'Terça;Quinta' ,'Segunda;Quarta;Sexta;Sábado;Domingo,Diurno');
-INSERT INTO Horario VALUES(12,12, 'Quinta;Sábado' ,'Segunda;Terça;Quarta;Sexta;Domingo,Noturno');
-INSERT INTO Horario VALUES(13,13, 'Quarta' ,'Segunda;Terça;Quinta;Sexta;Sábado;Domingo,Diurno');
-INSERT INTO Horario VALUES(14,14, 'Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta;Sábado,Misto');
-INSERT INTO Horario VALUES(15,15, 'Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta;Sábado,Misto');
-INSERT INTO Horario VALUES(16,16, 'Quarta;Domingo' ,'Segunda;Terça;Quinta;Sexta;Sábado,Diurno');
-INSERT INTO Horario VALUES(17,17, 'Terça' ,'Segunda;Quarta;Quinta;Sexta;Sábado;Domingo,Noturno');
-INSERT INTO Horario VALUES(18,18, 'Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta;Sábado,Misto');
-INSERT INTO Horario VALUES(19,19, 'Quinta;Sexta' ,'Segunda;Terça;Quarta;Sábado;Domingo,Diurno');
-INSERT INTO Horario VALUES(20,20, 'Sábado;Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta,Diurno');
+INSERT INTO Horario VALUES(1,1, 'Sábado;Domingo', 'Segunda;Terça;Quarta;Quinta;Sexta','Noturno');
+INSERT INTO Horario VALUES(2,2, 'Terça;Quinta', 'Segunda;Quarta;Sexta;Sábado;Domingo', 'Noturno');
+INSERT INTO Horario VALUES(3,3, 'Segunda;Terça', 'Quarta;Quinta;Sexta;Sábado;Domingo','Diurno');
+INSERT INTO Horario VALUES(4,4, 'Terça;Quarta', 'Segunda;Quinta;Sexta;Sábado;Domingo','Diurno');
+INSERT INTO Horario VALUES(5,5, 'Quinta;Sexta', 'Segunda;Terça;Quarta;Sábado;Domingo','Misto');
+INSERT INTO Horario VALUES(6,6, 'Quinta;Sexta', 'Segunda;Terça;Quarta;Sábado;Domingo','Misto');
+INSERT INTO Horario VALUES(7,7, 'Segunda;Terça' , 'Quarta;Quinta;Sexta;Sábado;Domingo','Diurno');
+INSERT INTO Horario VALUES(8,8, 'Sexta;Sábado' ,'Segunda;Terça;Quarta;Quinta;Domingo','Noturno');
+INSERT INTO Horario VALUES(9,9, 'Sexta;Sábado', 'Segunda;Terça;Quarta;Quinta;Sexta;Sábado;Domingo','Misto');
+INSERT INTO Horario VALUES(10,10, 'Segunda; Domingo' ,'Terça;Quarta;Quinta;Sexta;Sábado','Misto');
+INSERT INTO Horario VALUES(11,11, 'Terça;Quinta' ,'Segunda;Quarta;Sexta;Sábado;Domingo','Diurno');
+INSERT INTO Horario VALUES(12,12, 'Quinta;Sábado' ,'Segunda;Terça;Quarta;Sexta;Domingo','Noturno');
+INSERT INTO Horario VALUES(13,13, 'Quarta' ,'Segunda;Terça;Quinta;Sexta;Sábado;Domingo','Diurno');
+INSERT INTO Horario VALUES(14,14, 'Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta;Sábado','Misto');
+INSERT INTO Horario VALUES(15,15, 'Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta;Sábado','Misto');
+INSERT INTO Horario VALUES(16,16, 'Quarta;Domingo' ,'Segunda;Terça;Quinta;Sexta;Sábado','Diurno');
+INSERT INTO Horario VALUES(17,17, 'Terça' ,'Segunda;Quarta;Quinta;Sexta;Sábado;Domingo','Noturno');
+INSERT INTO Horario VALUES(18,18, 'Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta;Sábado','Misto');
+INSERT INTO Horario VALUES(19,19, 'Quinta;Sexta' ,'Segunda;Terça;Quarta;Sábado;Domingo','Diurno');
+INSERT INTO Horario VALUES(20,20, 'Sábado;Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta','Diurno');
 
 
 
