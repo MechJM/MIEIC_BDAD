@@ -56,7 +56,7 @@ CREATE TABLE Medico
     idFuncionario INTEGER unique not null check (idFuncionario > 0),
     Departamento VARCHAR(20) references Departamento(nome) on update cascade on delete cascade not null,
     Especialidade VARCHAR(20) check (Especialidade = Departamento),
-    Disponibilidade_Plantao BLOB,
+    Disponibilidade_Plantao INTEGER check (Disponibilidade_Plantao = 1 or Disponibilidade_Plantao = 0),
     unique (NIF,Departamento)
 );
 CREATE TABLE Horario
