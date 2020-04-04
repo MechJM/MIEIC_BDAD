@@ -5,17 +5,43 @@ INSERT INTO Cliente Values ('António Granja', 167760436, 'Rua Nossa Sra de Fát
 INSERT INTO Cliente Values ('Diogo Viana', 373878287, 'Rua das Amoras 100',919312021,5, NULL);
 INSERT INTO Cliente Values ('Kevin Ianga', 226614242,'Rua de Almada 10',918541208,6,'Insuficiência Cardiaca');
 INSERT INTO Cliente Values ('João David', 631969374,'Rua dos Indecisos 109',918922960,7, 'Perna esquerda quebrada');
-INSERT INTO Cliente Values ('Pedro Barbosa',507608741,'Rua Barão Forrester 3',966089679,8, 'Obesidade');
+INSERT INTO Cliente Values ('Pedro Barbosa',507608741,'Rua Barão Forrester 3',911475591,8, 'Obesidade');
 INSERT INTO Cliente Values ('Daniela Ferreira',946885253,'Rua das Escolas 81',969518081,9, 'Ansiedade');
 INSERT INTO Cliente Values ('Mariana Marinho',200780963,'Rua da Carla Ferreira' ,968081780,10, 'Diabetes');
+INSERT INTO Cliente Values ('Rute Chaves Bettencourt',115876635,'Rua Santa Clara do Sul 15' ,912000845,11, 'Palidez, Perda de apetite');
+INSERT INTO Cliente Values ('Nicholas Bernardes',123456987, 'Travessa São José 4212', 913542687, 12, 'Perda de memória, Vertigem');
+INSERT INTO Cliente Values ('Marisa Quadros',418563287, 'Travessa Doutor Paes de Melo 895', 918264555, 13, 'Rouquidão, Tosse');
 
-INSERT INTO Departamento VALUES('Pediatria',2);
-INSERT INTO Departamento VALUES('Psiquiatria',3);
-INSERT INTO Departamento VALUES('Oftamologia',2);
-INSERT INTO Departamento VALUES('Pneumologia',4);
+INSERT INTO Departamento VALUES('Análises Clínicas',4);
+INSERT INTO Departamento VALUES('Anestesiologia',3);
 INSERT INTO Departamento VALUES('Cardiologia',5);
-INSERT INTO Departamento VALUES('Urgências',0);
+INSERT INTO Departamento VALUES('Cirurgia de Especialidade',5);
+INSERT INTO Departamento VALUES('Cirurgia Geral',5);
+INSERT INTO Departamento VALUES('Dermatologia',1);
+INSERT INTO Departamento VALUES('Endocrinologia',4);
+INSERT INTO Departamento VALUES('Enfermagem',0);
+INSERT INTO Departamento VALUES('Gastrenterologia',4);
+INSERT INTO Departamento VALUES('Ginecologia-Obstetrícia',2);
+INSERT INTO Departamento VALUES('Hematologia',4);
+INSERT INTO Departamento VALUES('Imagiologia',3);
+INSERT INTO Departamento VALUES('Imunologia',3);
+INSERT INTO Departamento VALUES('Infecciologia',1);
+INSERT INTO Departamento VALUES('Medicina Dentária',1);
+INSERT INTO Departamento VALUES('Medicina Geral e Familiar',0);
+INSERT INTO Departamento VALUES('Medicina Intensiva',0);
+INSERT INTO Departamento VALUES('Nefrologia',3);
+INSERT INTO Departamento VALUES('Neurologia',5);
+INSERT INTO Departamento VALUES('Nutrição',1);
+INSERT INTO Departamento VALUES('Oftalmologia',2);
 INSERT INTO Departamento VALUES('Oncologia',1);
+INSERT INTO Departamento VALUES('Ortopedia',5);
+INSERT INTO Departamento VALUES('Otorrinolaringologia',4);
+INSERT INTO Departamento VALUES('Patologia',4);
+INSERT INTO Departamento VALUES('Pediatria',2);
+INSERT INTO Departamento VALUES('Pneumologia',4);
+INSERT INTO Departamento VALUES('Psiquiatria',3);
+INSERT INTO Departamento VALUES('Urgências',0);
+INSERT INTO Departamento VALUES('Urologia',3);
 
 INSERT INTO Funcionario VALUES ('Asdrubál Silva',130437866,'Rua dos Carvalhos 44' ,964118989, 1, 'Urgências');
 INSERT INTO Funcionario VALUES ('Pedro Silva',623832096,'Rua das Flores 73' ,962677726,2, 'Urgências');
@@ -31,13 +57,12 @@ INSERT INTO Funcionario VALUES ('Juliana Santos',132845751, 'Praça da Repúblic
 INSERT INTO Funcionario VALUES ('Margarida Sá',440837476, 'Rua dos Vingadores 76' ,917368886,12,'Pediatria');
 INSERT INTO Funcionario VALUES ('António César',209765575, 'Rua D. Sebastião 33' ,919184876,13,'Pediatria');
 INSERT INTO Funcionario VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral 12'  ,914837993,14,'Pediatria');
-INSERT INTO Funcionario VALUES ('Miguel Taveira',345631564, 'Avenida do Ouro 1' ,931154433,15,'Oftamologia');
-INSERT INTO Funcionario VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftamologia');
+INSERT INTO Funcionario VALUES ('Miguel Taveira',345631564, 'Avenida do Ouro 1' ,931154433,15,'Oftalmologia');
+INSERT INTO Funcionario VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftalmologia');
 INSERT INTO Funcionario VALUES ('Marta Correia',874747712, 'Praça Mouzinho de Alburqueque 45' ,936799890,17,'Psiquiatria');
 INSERT INTO Funcionario VALUES ('Ana Gonçalves',385970256, 'Rua Sem Fim 89' ,938710866,18,'Psiquiatria');
 INSERT INTO Funcionario VALUES ('Marisa Cruz',578230859, 'Rua Pequena 10' ,935861728,19,'Oncologia');
 INSERT INTO Funcionario VALUES ('Luana Andrade',847144854, 'Rua Comandante Augusto Cardoso' ,911035333,20,'Oncologia');
-
 
 INSERT INTO Enfermeiro VALUES ('Asdrubál Silva',130437866,'Rua dos Carvalhos 44' ,964118989, 1, 'Urgências',0);
 INSERT INTO Enfermeiro VALUES ('António Lima',123968184, 'Praça do Bonfim 30' ,934719368,10,'Cardiologia',5);
@@ -47,9 +72,8 @@ INSERT INTO Enfermeiro VALUES ('Sofia Borges',325437259, 'Rua Pedro-Hispano 21',
 INSERT INTO Enfermeiro VALUES ('Miguel Lopes',564680097, 'Rua de Cedofeita 45' ,931154433,8,'Pneumologia',20);
 INSERT INTO Enfermeiro VALUES ('Joana Alves',799642630, 'Rua do Varão 60' ,935861728,5, 'Urgências',98);
 INSERT INTO Enfermeiro VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral' ,914837993,14,'Pediatria',47);
-INSERT INTO Enfermeiro VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftamologia', 22);
+INSERT INTO Enfermeiro VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftalmologia', 22);
 INSERT INTO Enfermeiro VALUES ('Ana Gonçalves',385970256, 'Rua Sem Fim 89' ,938710866,18,'Psiquiatria', 137);
-
 
 INSERT INTO Medico VALUES ('Pedro Silva',623832096,'Rua das Flores 73' ,962677726,2, 'Urgências','Urgências',NULL);
 INSERT INTO Medico VALUES ('Domingo Domingues',946885253, 'Rua 5 de Outubro 123' ,931360537,4, 'Urgências' , 'Urgências',NULL);
@@ -57,7 +81,7 @@ INSERT INTO Medico VALUES ('Luís Silva',130437866,'Rua Álvares Cabral 50 ',969
 INSERT INTO Medico VALUES ('Miguel Azevedo',997395948, 'Rua do Miguel Jordão 89' ,966089679,7,'Pneumologia','Pneumologia',NULL);
 INSERT INTO Medico VALUES ('Joaquim Lopes',874747711, 'Rua Miguel Bombarda 76' ,931513214,9,'Cardiologia','Cardiologia',NULL);
 INSERT INTO Medico VALUES ('António César',209765575, 'Rua D. Sebastião 33' ,919184876,13,'Pediatria','Pediatria',NULL);
-INSERT INTO Medico VALUES ('Miguel Taveira',345631564, 'Avenida do Ouro 1' ,931154433,15,'Oftamologia','Oftamologia',NULL);
+INSERT INTO Medico VALUES ('Miguel Taveira',345631564, 'Avenida do Ouro 1' ,931154433,15,'Oftalmologia','Oftalmologia',NULL);
 INSERT INTO Medico VALUES ('Marta Correia',874747712, 'Praça Mouzinho de Alburqueque 45' ,936799890,17,'Psiquiatria','Psiquiatria',NULL);
 INSERT INTO Medico VALUES ('Marisa Cruz',578230859, 'Rua Pequena 10 ',935861728,19,'Oncologia','Oncologia',NULL);
 INSERT INTO Medico VALUES ('Luana Andrade',847144854, 'Rua Comandante Augusto Cardoso' ,911035333,20,'Oncologia', 'Oncologia',NULL);
@@ -83,8 +107,6 @@ INSERT INTO Horario VALUES(18,18, 'Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta
 INSERT INTO Horario VALUES(19,19, 'Quinta;Sexta' ,'Segunda;Terça;Quarta;Sábado;Domingo','Diurno');
 INSERT INTO Horario VALUES(20,20, 'Sábado;Domingo' ,'Segunda;Terça;Quarta;Quinta;Sexta','Diurno');
 
-
-
 INSERT INTO Equipamento VALUES(1,'Imagiologia',20);
 INSERT INTO Equipamento VALUES(2,'Imagiologia',5);
 INSERT INTO Equipamento VALUES(3,'Prótese',1);
@@ -106,15 +128,30 @@ INSERT INTO Servico VALUES(7, '07/05/2020','17:00',120,9);
 INSERT INTO Servico VALUES(8, '05/04/2020','16:30',150,3);
 INSERT INTO Servico VALUES(9, '10/05/2020','14:30',20,4);
 INSERT INTO Servico VALUES(10, '12/05/2020','15:00',20,6);
+INSERT INTO Servico VALUES(11, '14/05/2020','16:00',46,11);
+INSERT INTO Servico VALUES(12, '09/05/2020','16:30',64,12);
+INSERT INTO Servico VALUES(13, '17/05/2020','14:00',37,13);
+INSERT INTO Servico VALUES(14, '11/07/2020','13:20',73,8);
+INSERT INTO Servico VALUES(15, '11/09/2020','13:45',44,6);
+INSERT INTO Servico VALUES(16, '30/07/2020','9:20',121,7);
+INSERT INTO Servico VALUES(17, '12/08/2020','8:00',73,11);
+INSERT INTO Servico VALUES(18, '11/10/2020','11:15',200,13);
+INSERT INTO Servico VALUES(19, '20/07/2020','13:10',120,13);
+INSERT INTO Servico VALUES(20, '25/06/2020','17:40',98,5);
 
 INSERT INTO Consulta VALUES(9, '10/05/2020','14:30',20,4,'Arritmia','Fadiga,Falta de ar',13);
 INSERT INTO Consulta VALUES(10, '12/05/2020','15:00',20,6,'Hipertensão','Obesidade',17);
 INSERT INTO Consulta VALUES(3, '05/04/2020', '09:00', 35,7,'Lesão Ocular','Dor no olho direito, Diabetes',19);
 INSERT INTO Consulta VALUES(2, '31/12/2020', '10:00', 40,2,'Arritmia','Dor no olho direito, Diabetes',20);
+INSERT INTO Consulta VALUES(14, '11/07/2020','13:20',73,8,NULL,NULL,2);
+INSERT INTO Consulta VALUES(15, '11/09/2020','13:45',44,6,NULL,NULL,4);
 
 INSERT INTO Cirurgia VALUES(4, '07/04/2020','09:30', 120,7,NULL,'Perna esquerda');
 INSERT INTO Cirurgia VALUES(7, '07/05/2020','17:00',120,9,NULL,'Pulmão');
 INSERT INTO Cirurgia VALUES(8, '05/04/2020','16:30',150,3,NULL,'Coração');
+INSERT INTO Cirurgia VALUES(11, '14/05/2020','16:00',46,11,NULL,'Joelho');
+INSERT INTO Cirurgia VALUES(12, '09/05/2020','16:30',64,12,NULL,'Orelha');
+INSERT INTO Cirurgia VALUES(13, '17/05/2020','14:00',37,13,NULL,'Mão esquerda');
 
 INSERT INTO Analise VALUES(1,'07/04/2020','14:00',20,4,NULL,NULL,'09/04/2020',9,9);
 INSERT INTO Analise VALUES(5,'17/04/2020','09:30',150,6,NULL,NULL,'19/04/2020',14,10);
@@ -123,20 +160,32 @@ INSERT INTO Analise VALUES(6,'05/05/2020','12:30',40,7,NULL,NULL,'07/05/2020',15
 INSERT INTO Realizam VALUES(2,4);
 INSERT INTO Realizam VALUES(7,7);
 INSERT INTO Realizam VALUES(9,8);
+INSERT INTO Realizam VALUES(2,11);
+INSERT INTO Realizam VALUES(4,11);
+INSERT INTO Realizam VALUES(19,11);
+INSERT INTO Realizam VALUES(20,11);
+INSERT INTO Realizam VALUES(7,12);
+INSERT INTO Realizam VALUES(4,12);
+INSERT INTO Realizam VALUES(9,13);
 
 INSERT INTO Auxilia VALUES(1,4);
 INSERT INTO Auxilia VALUES(10,7);
 INSERT INTO Auxilia VALUES(8,8);
+INSERT INTO Auxilia VALUES(11,11);
+INSERT INTO Auxilia VALUES(10,11);
+INSERT INTO Auxilia VALUES(12,11);
+INSERT INTO Auxilia VALUES(1,12);
+INSERT INTO Auxilia VALUES(8,12);
+INSERT INTO Auxilia VALUES(3,12);
+INSERT INTO Auxilia VALUES(3,13);
 
-INSERT INTO Usado_EM VALUES(1,4);
-INSERT INTO Usado_EM VALUES(2,4);
-INSERT INTO Usado_EM VALUES(8,7);
-INSERT INTO Usado_EM VALUES(2,7);
-INSERT INTO Usado_EM VALUES(5,8);
-INSERT INTO Usado_EM VALUES(6,8);
-INSERT INTO Usado_EM VALUES(7,1);
-INSERT INTO Usado_EM VALUES(7,5);
-INSERT INTO Usado_EM VALUES(9,6);
-INSERT INTO Usado_EM VALUES(4,10);
-
-
+INSERT INTO Usado_Em VALUES(1,4);
+INSERT INTO Usado_Em VALUES(2,4);
+INSERT INTO Usado_Em VALUES(8,7);
+INSERT INTO Usado_Em VALUES(2,7);
+INSERT INTO Usado_Em VALUES(5,8);
+INSERT INTO Usado_Em VALUES(6,8);
+INSERT INTO Usado_Em VALUES(7,1);
+INSERT INTO Usado_Em VALUES(7,5);
+INSERT INTO Usado_Em VALUES(9,6);
+INSERT INTO Usado_Em VALUES(4,10);
