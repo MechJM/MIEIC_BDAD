@@ -56,7 +56,7 @@ INSERT INTO Funcionario VALUES ('António Lima',123968184, 'Praça do Bonfim 30'
 INSERT INTO Funcionario VALUES ('Juliana Santos',132845751, 'Praça da República 50' ,912574702,11,'Cardiologia');
 INSERT INTO Funcionario VALUES ('Margarida Sá',440837476, 'Rua dos Vingadores 76' ,917368886,12,'Pediatria');
 INSERT INTO Funcionario VALUES ('António César',209765575, 'Rua D. Sebastião 33' ,919184876,13,'Pediatria');
-INSERT INTO Funcionario VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral 12'  ,914837993,14,'Pediatria');
+INSERT INTO Funcionario VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral 12' ,914837993,14,'Pediatria');
 INSERT INTO Funcionario VALUES ('Miguel Taveira',345631564, 'Avenida do Ouro 1' ,931154433,15,'Oftalmologia');
 INSERT INTO Funcionario VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftalmologia');
 INSERT INTO Funcionario VALUES ('Marta Correia',874747712, 'Praça Mouzinho de Alburqueque 45' ,936799890,17,'Psiquiatria');
@@ -66,24 +66,24 @@ INSERT INTO Funcionario VALUES ('Luana Andrade',847144854, 'Rua Comandante Augus
 
 INSERT INTO Enfermeiro VALUES ('Asdrubál Silva',130437866,'Rua dos Carvalhos 44' ,964118989, 1, 'Urgências',0);
 INSERT INTO Enfermeiro VALUES ('António Lima',123968184, 'Praça do Bonfim 30' ,934719368,10,'Cardiologia',5);
-INSERT INTO Enfermeiro VALUES ('Margarida Sá',440837476, 'Rua dos Vingadores 76',917368886,12,'Pediatria',35);
-INSERT INTO Enfermeiro VALUES ('Juliana Santos',132845751, 'Praça da República 50',912574702,11,'Cardiologia',250);
-INSERT INTO Enfermeiro VALUES ('Sofia Borges',325437259, 'Rua Pedro-Hispano 21',937982340,3, 'Urgências',15);
+INSERT INTO Enfermeiro VALUES ('Margarida Sá',440837476, 'Rua dos Vingadores 76' ,917368886,12,'Pediatria',35);
+INSERT INTO Enfermeiro VALUES ('Juliana Santos',132845751, 'Praça da República 50' ,912574702,11,'Cardiologia',250);
+INSERT INTO Enfermeiro VALUES ('Sofia Borges',325437259, 'Rua Pedro-Hispano 21' ,937982340,3, 'Urgências',15);
 INSERT INTO Enfermeiro VALUES ('Miguel Lopes',564680097, 'Rua de Cedofeita 45' ,931154433,8,'Pneumologia',20);
 INSERT INTO Enfermeiro VALUES ('Joana Alves',799642630, 'Rua do Varão 60' ,935861728,5, 'Urgências',98);
-INSERT INTO Enfermeiro VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral' ,914837993,14,'Pediatria',47);
+INSERT INTO Enfermeiro VALUES ('Daniel Monteiro',734746160, 'Rua Álvares Cabral 12' ,914837993,14,'Pediatria',47);
 INSERT INTO Enfermeiro VALUES ('João Rocha',960954509, 'Avenida da Boavista 267' ,939318349,16,'Oftalmologia', 22);
 INSERT INTO Enfermeiro VALUES ('Ana Gonçalves',385970256, 'Rua Sem Fim 89' ,938710866,18,'Psiquiatria', 137);
 
 INSERT INTO Medico VALUES ('Pedro Silva',623832096,'Rua das Flores 73' ,962677726,2, 'Urgências','Urgências',1);
 INSERT INTO Medico VALUES ('Domingo Domingues',946885253, 'Rua 5 de Outubro 123' ,931360537,4, 'Urgências' , 'Urgências',0);
-INSERT INTO Medico VALUES ('Luís Silva',130437867,'Rua Álvares Cabral 50 ',969402024,6,'Pneumologia','Pneumologia',1);
+INSERT INTO Medico VALUES ('Luís Silva',130437867,'Rua Álvares Cabral 50' ,969402024,6,'Pneumologia','Pneumologia',1);
 INSERT INTO Medico VALUES ('Miguel Azevedo',997395948, 'Rua do Miguel Jordão 89' ,966089679,7,'Pneumologia','Pneumologia',0);
 INSERT INTO Medico VALUES ('Joaquim Lopes',874747711, 'Rua Miguel Bombarda 76' ,931513214,9,'Cardiologia','Cardiologia',1);
 INSERT INTO Medico VALUES ('António César',209765575, 'Rua D. Sebastião 33' ,919184876,13,'Pediatria','Pediatria',0);
 INSERT INTO Medico VALUES ('Miguel Taveira',345631564, 'Avenida do Ouro 1' ,931154433,15,'Oftalmologia','Oftalmologia',1);
 INSERT INTO Medico VALUES ('Marta Correia',874747712, 'Praça Mouzinho de Alburqueque 45' ,936799890,17,'Psiquiatria','Psiquiatria',0);
-INSERT INTO Medico VALUES ('Marisa Cruz',578230859, 'Rua Pequena 10 ',935861729,19,'Oncologia','Oncologia',1);
+INSERT INTO Medico VALUES ('Marisa Cruz',578230859, 'Rua Pequena 10' ,935861729,19,'Oncologia','Oncologia',1);
 INSERT INTO Medico VALUES ('Luana Andrade',847144854, 'Rua Comandante Augusto Cardoso' ,911035333,20,'Oncologia', 'Oncologia',0);
 
 INSERT INTO Horario VALUES(1,1, 'Sábado;Domingo', 'Segunda;Terça;Quarta;Quinta;Sexta','Noturno');
@@ -160,7 +160,7 @@ INSERT INTO Consulta VALUES(17, '12/08/2020','8:00',73,11,'Hérnia','Dores na co
 INSERT INTO Consulta VALUES(18, '11/10/2020','11:15',200,13,'Lesão no ouvido','Dificuldade em ouvir, Diabetes',19);
 INSERT INTO Consulta Values(19, '20/07/2020','13:10',120,13,'Cancro','Dores de cabeça',19);
 
-INSERT INTO Cirurgia VALUES(4, '07/04/2020','09:30', 120,7,'Amputação','Perna esquerda');
+INSERT INTO Cirurgia VALUES(4, '07/04/2020','09:30', 120,1,'Amputação','Perna esquerda');
 INSERT INTO Cirurgia VALUES(7, '07/05/2020','17:00',120,9,'Transplante','Pulmão');
 INSERT INTO Cirurgia VALUES(8, '05/04/2020','16:30',150,3,'Colocação de pacemaker','Coração');
 INSERT INTO Cirurgia VALUES(11, '14/05/2020','16:00',46,11,'Colocação de prótese','Joelho');
@@ -171,16 +171,16 @@ INSERT INTO Cirurgia VALUES(21, '26/06/2020','17:00',156,7,'Remoção de tumor',
 INSERT INTO Cirurgia VALUES(22, '25/08/2020','12:40',80,3,'Cirurgia plástica','Pele');
 INSERT INTO Cirurgia VALUES(23, '11/11/2020','17:15',28,2,'Colocação de lente','Olho');
 
-INSERT INTO Analise VALUES(1,'07/04/2020','14:00',20,4,'TAC','Deformações no coração','09/04/2020',9,9);
-INSERT INTO Analise VALUES(5,'17/04/2020','09:30',150,6,NULL,NULL,'19/04/2020',14,10);
-INSERT INTO Analise VALUES(6,'05/05/2020','12:30',40,7,NULL,NULL,'07/05/2020',15,3);
-INSERT INTO Analise VALUES(24, '12/06/2020','9:40',88,1,NULL,NULL,'26/06/2020,',20,19);
-INSERT INTO Analise VALUES(25, '23/04/2020','10:40',250,5,NULL,NULL,'04/05/2020',19,18);
-INSERT INTO Analise VALUES(26, '29/07/2020','17:30',192,6,NULL,NULL,'19/08/2020',4,17);
-INSERT INTO Analise VALUES(27, '25/12/2020','15:30',68,11,NULL,NULL,'01/01/2021',5,16);
-INSERT INTO Analise VALUES(28, '15/12/2020','11:00',130,10,NULL,NULL,'25/12/2020',7,15);
-INSERT INTO Analise VALUES(29, '31/08/2020','10:40',150,12,NULL,NULL,'11/09/2020',9,14);
-INSERT INTO Analise VALUES(30, '28/02/2020','7:20',174,13,NULL,NULL,'10/03/2020',12,10);
+INSERT INTO Analise VALUES(1, '24/05/2020', '14:00', 100, 5,'TAC','Deformações no coração','09/04/2020',9,9);
+INSERT INTO Analise VALUES(5, '17/04/2020','22:00', 80,8,'TAC','Não existem estenoses','19/04/2020',14,10);
+INSERT INTO Analise VALUES(6, '05/05/2020','20:00',80,10,'Radiografia','O osso está a regenerar como previsto','07/05/2020',15,3);
+INSERT INTO Analise VALUES(24, '12/06/2020','9:40',88,1,'Espirometria','Asma testada como positiva','26/06/2020,',20,19);
+INSERT INTO Analise VALUES(25, '23/04/2020','10:40',250,5,'Análise ao sangue','Nivéis de glicose elevados','04/05/2020',19,18);
+INSERT INTO Analise VALUES(26, '29/07/2020','17:30',192,6,'Ecocardiograma','Diagnosticada a insuficiência cardíaca','19/08/2020',4,17);
+INSERT INTO Analise VALUES(27, '25/12/2020','15:30',68,11,'Análise ao sangue','Nivéis de ferro e glicose muito baixos','01/01/2021',5,16);
+INSERT INTO Analise VALUES(28, '15/12/2020','11:00',130,10,'Glicemia','Diabetes diagnosticado','25/12/2020',7,15);
+INSERT INTO Analise VALUES(29, '31/08/2020','10:40',150,12,'ADAS-COG','Alzheimer não detetado','11/09/2020',9,14);
+INSERT INTO Analise VALUES(30, '28/02/2020','7:20',174,13,'TFP','A capacidade expiratória está muito abaixo do normal','10/03/2020',12,10);
 
 INSERT INTO Realizam VALUES(2,4);
 INSERT INTO Realizam VALUES(7,7);
