@@ -7,7 +7,7 @@ create table Produto (
     preco real
 );
 create table Encomenda (
-    idEnc integer,
+    id integer,
     idProd integer references Produto not null on update cascade,
     quantidade integer
 );
