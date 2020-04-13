@@ -23,46 +23,46 @@
       </text>
     </questiontext>
     <answer fraction="100" format="html">
-      <text>create table Encomenda (
+      <text>create table Package (
             id integer,
-            idProd integer references Produto(id) on update cascade not null,
-            quantidade integer
+            idProd integer references Product(id) on update cascade not null,
+            amount integer
             );</text>
       <feedback format="html">
         <text>Since the Product relation doesn't have its "id" attribute marked as a primary key, we have to specify it's the one we want to be used. Also, the "on update" statement needs to come before "not null" in this case. Therefore, this is the only option that fits the requirements.</text>
       </feedback>
     </answer>
-    <answer fraction="" format="html">
-      <text>create table Encomenda (
+    <answer fraction="0" format="html">
+      <text>create table Package (
             id integer,
-            idProd integer references Produto on update cascade not null,
-            quantidade integer
+            idProd integer references Product on update cascade not null,
+            amount integer
             );</text>
       <feedback format="html">
         <text>Since the Product relation doesn't have its "id" attribute marked as a primary key, we have to specify it's the one we want to be used.</text>
       </feedback>
     </answer>
-    <answer fraction="" format="html">
-      <text>create table Encomenda (
+    <answer fraction="0" format="html">
+      <text>create table Package (
             id integer,
-            idProd integer references Produto(id) not null on update cascade,
-            quantidade integer
+            idProd integer references Product(id) not null on update cascade,
+            amount integer
             );</text>
       <feedback format="html">
         <text>The "on update" statement needs to come before "not null" in this case.</text>
       </feedback>
     </answer>
-    <answer fraction="" format="html">
-      <text>create table Encomenda (
+    <answer fraction="0" format="html">
+      <text>create table Package (
             id integer,
-            idProd integer references Produto not null on update cascade,
-            quantidade integer
+            idProd integer references Product not null on update cascade,
+            amount integer
             );</text>
       <feedback format="html">
         <text>Since the Product relation doesn't have its "id" attribute marked as a primary key, we have to specify it's the one we want to be used. Also, the "on update" statement needs to come before "not null" in this case.</text>
       </feedback>
     </answer>
-    <answer fraction="" format="html">
+    <answer fraction="0" format="html">
       <text>All the other options are correct.</text>
       <feedback format="html">
         <text>Since the Product relation doesn't have its "id" attribute marked as a primary key, we have to specify it's the one we want to be used. Also, the "on update" statement needs to come before "not null" in this case. Therefore, only one option fits the requirements.</text>

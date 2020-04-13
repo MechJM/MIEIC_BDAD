@@ -1,13 +1,13 @@
 pragma foreign_keys=ON;
-drop table if exists Produto;
-drop table if exists Encomenda;
+drop table if exists Product;
+drop table if exists Package;
 
-create table Produto (
+create table Product (
     id integer,
-    preco real
+    price real
 );
-create table Encomenda (
+create table Package (
     id integer,
-    idProd integer references Produto(id) not null on update cascade,
-    quantidade integer
+    idProd integer references Product(id) not null on update cascade,
+    amount integer
 );
