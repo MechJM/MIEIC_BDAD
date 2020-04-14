@@ -3,61 +3,61 @@
       <text>DDL - Referential Integrity and Foreign Keys</text>
     </name>
     <questiontext format="html">
-      <text>Analyse the following SQL script:
+      <text><p>Analyse the following SQL script:</p>
 
 
-      pragma foreign_keys=ON;
-      drop table if exists Product;
-      drop table if exists Package;
-      create table Product (
-          id integer,
-          price real
-      );
-      create table Package (
-          id integer,
-          idProd integer,
-          amount integer
-      );
+      <p>pragma foreign_keys=ON;<br>
+      drop table if exists Product;<br>
+      drop table if exists Package;<br>
+      create table Product (<br>
+      &nbsp;&nbsp;&nbsp;id integer,<br>
+      &nbsp;&nbsp;&nbsp;price real<br>
+      );<br>
+      create table Package (<br>
+      &nbsp;&nbsp;&nbsp;id integer,<br>
+      &nbsp;&nbsp;&nbsp;idProd integer,<br>
+      &nbsp;&nbsp;&nbsp;amount integer<br>
+      );</p>
 
-      Assume you're asked to modify the script so that the attribute "idProd" is a foreign key that corresponds to the "id" attribute in the Product relation. Additionally, the "idProd" attribute should never have a NULL value and when its value is updated we want the "cascade" behaviour to be used. A database engineer was given this task and came up with the answers shown below (assume the rest of the script remains identical to the one shown above). Which of the answers is correct?
+      <p>Assume you're asked to modify the script so that the attribute "idProd" is a foreign key that corresponds to the "id" attribute in the Product relation. Additionally, the "idProd" attribute should never have a NULL value and when its value is updated we want the "cascade" behaviour to be used. A database engineer was given this task and came up with the answers shown below (assume the rest of the script remains identical to the one shown above). Which of the answers is correct?</p>
       </text>
     </questiontext>
     <answer fraction="100" format="html">
-      <text>create table Package (
-            id integer,
-            idProd integer references Product(id) on update cascade not null,
-            amount integer
-            );</text>
+      <text><p>create table Package (<br>
+            &nbsp;&nbsp;&nbsp;id integer,<br>
+            &nbsp;&nbsp;&nbsp;idProd integer references Product(id) on update cascade not null,<br>
+            &nbsp;&nbsp;&nbsp;amount integer<br>
+            );</p></text>
       <feedback format="html">
         <text>Since the Product relation doesn't have its "id" attribute marked as a primary key, we have to specify it's the one we want to be used. Also, the "on update" statement needs to come before "not null" in this case. Therefore, this is the only option that fits the requirements.</text>
       </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>create table Package (
-            id integer,
-            idProd integer references Product on update cascade not null,
-            amount integer
-            );</text>
+      <text><p>create table Package (<br>
+            &nbsp;&nbsp;&nbsp;id integer,<br>
+            &nbsp;&nbsp;&nbsp;idProd integer references Product on update cascade not null,<br>
+            &nbsp;&nbsp;&nbsp;amount integer<br>
+            );</p></text>
       <feedback format="html">
         <text>Since the Product relation doesn't have its "id" attribute marked as a primary key, we have to specify it's the one we want to be used.</text>
       </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>create table Package (
-            id integer,
-            idProd integer references Product(id) not null on update cascade,
-            amount integer
-            );</text>
+      <text><p>create table Package (<br>
+            &nbsp;&nbsp;&nbsp;id integer,<br>
+            &nbsp;&nbsp;&nbsp;idProd integer references Product(id) not null on update cascade,<br>
+            &nbsp;&nbsp;&nbsp;amount integer<br>
+            );</p></text>
       <feedback format="html">
         <text>The "on update" statement needs to come before "not null" in this case.</text>
       </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>create table Package (
-            id integer,
-            idProd integer references Product not null on update cascade,
-            amount integer
-            );</text>
+      <text><p>create table Package (<br>
+            &nbsp;&nbsp;&nbsp;id integer,<br>
+            &nbsp;&nbsp;&nbsp;idProd integer references Product not null on update cascade,<br>
+            &nbsp;&nbsp;&nbsp;amount integer<br>
+            );</p></text>
       <feedback format="html">
         <text>Since the Product relation doesn't have its "id" attribute marked as a primary key, we have to specify it's the one we want to be used. Also, the "on update" statement needs to come before "not null" in this case.</text>
       </feedback>
