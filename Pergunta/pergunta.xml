@@ -4,8 +4,6 @@
     </name>
     <questiontext format="html">
       <text><p>Analyse the following SQL script:</p>
-
-
       <p>pragma foreign_keys=ON;<br>
       drop table if exists Product;<br>
       drop table if exists Package;<br>
@@ -18,7 +16,6 @@
       &nbsp;&nbsp;&nbsp;idProd integer,<br>
       &nbsp;&nbsp;&nbsp;amount integer<br>
       );</p>
-
       <p>Assume you're asked to modify the script so that the attribute "idProd" is a foreign key that corresponds to the "id" attribute in the Product relation. Additionally, the "idProd" attribute should never have a NULL value and when its value is updated we want the "cascade" behaviour to be used. A database engineer was given this task and came up with the answers shown below (assume the rest of the script remains identical to the one shown above). Which of the answers is correct?</p>
       </text>
     </questiontext>
