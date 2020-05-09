@@ -118,7 +118,7 @@ INSERT INTO Equipamento VALUES(8,'Termómetro',5);
 INSERT INTO Equipamento VALUES(9,'Termómetro',7);
 INSERT INTO Equipamento VALUES(10,'Ferramenta Cirúrgica',50);
 
-INSERT INTO Servico VALUES(1, '24/05/2020', '14:00', 100, 5);
+INSERT INTO Servico VALUES(1, '24/05/2020', '14:00', 100,5);
 INSERT INTO Servico VALUES(2, '31/12/2020', '10:00', 40,2);
 INSERT INTO Servico VALUES(3, '05/04/2020', '09:00', 35,7);
 INSERT INTO Servico VALUES(4, '07/04/2020','09:30', 120,1);
