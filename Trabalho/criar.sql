@@ -33,8 +33,7 @@ CREATE TABLE Funcionario
     Morada VARCHAR(300),
     Telefone INTEGER check (Telefone > 0),
     idFuncionario INTEGER unique not null check (idFuncionario > 0),
-    Departamento VARCHAR(20) references Departamento(nome) on update cascade on delete cascade not null,
-    unique (NIF,Departamento)
+    Departamento VARCHAR(20) references Departamento(nome) on update cascade on delete cascade not null
 );
 CREATE TABLE Enfermeiro
 (
@@ -44,8 +43,7 @@ CREATE TABLE Enfermeiro
     Telefone INTEGER check (Telefone > 0),
     idFuncionario INTEGER unique not null check (idFuncionario > 0),
     Departamento VARCHAR(20) references Departamento(nome) on update cascade on delete cascade not null,
-    Injecoes_Administradas INTEGER check (Injecoes_Administradas >= 0),
-    unique (NIF,Departamento)
+    Injecoes_Administradas INTEGER check (Injecoes_Administradas >= 0)
 );
 CREATE TABLE Medico
 (
@@ -56,8 +54,7 @@ CREATE TABLE Medico
     idFuncionario INTEGER unique not null check (idFuncionario > 0),
     Departamento VARCHAR(20) references Departamento(nome) on update cascade on delete cascade not null,
     Especialidade VARCHAR(20) check (Especialidade = Departamento),
-    Disponibilidade_Plantao INTEGER check (Disponibilidade_Plantao = 1 or Disponibilidade_Plantao = 0),
-    unique (NIF,Departamento)
+    Disponibilidade_Plantao INTEGER check (Disponibilidade_Plantao = 1 or Disponibilidade_Plantao = 0)
 );
 CREATE TABLE Horario
 (
@@ -129,16 +126,19 @@ CREATE TABLE Departamento
 CREATE TABLE Realizam
 (
     Medico INTEGER references Medico(idFuncionario) on update cascade on delete cascade not null check (Medico > 0),
-    Cirurgia INTEGER references Cirurgia(idServico) on update cascade on delete cascade not null check (Cirurgia > 0)
+    Cirurgia INTEGER references Cirurgia(idServico) on update cascade on delete cascade not null check (Cirurgia > 0),
+    primary key (Medico,Cirurgia)
 );
 CREATE TABLE Auxilia
 (
     Enfermeiro INTEGER references Enfermeiro(idFuncionario) on update cascade on delete cascade not null check (Enfermeiro > 0),
-    Cirurgia INTEGER references Cirurgia(idServico) on update cascade on delete cascade not null check (Cirurgia > 0)
+    Cirurgia INTEGER references Cirurgia(idServico) on update cascade on delete cascade not null check (Cirurgia > 0),
+    primary key (Enfermeiro,Cirurgia)
 );
 CREATE TABLE Usado_Em
 (
     Codigo INTEGER references Equipamento(Codigo) on update cascade on delete cascade not null check (Codigo > 0),
-    idServico INTEGER references Servico(idServico) on update cascade on delete cascade not null check (idServico > 0)
+    idServico INTEGER references Servico(idServico) on update cascade on delete cascade not null check (idServico > 0),
+    primary key (Codigo,idServico)
 );
 COMMIT;
