@@ -1,5 +1,4 @@
-PRAGMA foreign_keys
-=ON;
+PRAGMA foreign_keys=ON;
 BEGIN TRANSACTION;
 
 DROP TABLE IF EXISTS Auxilia;
