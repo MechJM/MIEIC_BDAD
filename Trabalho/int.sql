@@ -20,3 +20,5 @@ select Cliente.Nome as Nome_do_Cliente from Cliente,Analise where Cliente.idClie
 select '' as '';
 select Departamento.Nome as Nome from Departamento where Nome not in (select Departamento.Nome as Nome from Departamento,Funcionario where Funcionario.Departamento = Departamento.Nome group by Departamento.Nome);--Departamentos sem funcionários
 select '' as '';
+select Cliente.Nome as Nome_do_Cliente,sum(Servico.Custo) as CustoTotal from Cliente,Servico where Cliente.idCliente = Servico.idCliente and strftime('%m',Servico.Data) = '05' and strftime('%Y',Servico.Data) = '2020' group by Cliente.idCliente;--dinheiro gasto por clientes em serviços no mes de Maio de 2020
+select '' as '';
