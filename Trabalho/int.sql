@@ -17,3 +17,6 @@ select '' as '';
 select Medico.Nome as Nome,Medico.idFuncionario as idMedico,count(*) as numCirurgias from Medico,Cirurgia,Realizam where Realizam.Medico = Medico.idFuncionario and Realizam.Cirurgia = Cirurgia.idServico group by Medico.idFuncionario;
 select '' as '';
 select Cliente.Nome as Nome_do_Cliente from Cliente,Analise where Cliente.idCliente = Analise.idCliente and Analise.Nome like '%Ecocardiograma%' and Cliente.idCliente in (select Cliente.idCliente from Cliente,Consulta where Cliente.idCliente = Consulta.idCliente and Consulta.Diagnostico like '%Hipertensão%');--dos clientes que estiveram numa consulta onde foram diagnosticados com hipertensão, quais realizaram um ecocardiograma 
+select '' as '';
+select Departamento.Nome as Nome from Departamento where Nome not in (select Departamento.Nome as Nome from Departamento,Funcionario where Funcionario.Departamento = Departamento.Nome group by Departamento.Nome);--Departamentos sem funcionários
+select '' as '';
