@@ -22,3 +22,4 @@ select Departamento.Nome as Nome from Departamento where Nome not in (select Dep
 select '' as '';
 select Cliente.Nome as Nome_do_Cliente,sum(Servico.Custo) as CustoTotal from Cliente,Servico where Cliente.idCliente = Servico.idCliente and strftime('%m',Servico.Data) = '05' and strftime('%Y',Servico.Data) = '2020' group by Cliente.idCliente;--dinheiro gasto por clientes em serviços no mes de Maio de 2020
 select '' as '';
+select Cirurgia.idServico as idCirurgia,sum(Equipamento.Quantidade) as Equipamentos_Usados from Cirurgia,Usado_Em,Equipamento where Cirurgia.idServico = Usado_Em.idServico and Usado_Em.Codigo = Equipamento.Codigo and Equipamento.Tipo like '%Ferramenta Cirúrgica%' group by Cirurgia.idServico;--total de ferramentas cirúrgicas usadas por cirurgia
