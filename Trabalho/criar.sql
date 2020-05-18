@@ -60,6 +60,7 @@ CREATE TABLE Horario
     idHorario INTEGER primary key not null check (idHorario > 0),
     idFuncionario INTEGER references Funcionario(idFuncionario) on update cascade on delete cascade not null,
     Dia_folga VARCHAR(100),
+    Data_segunda CHAR(10),
     turnoDiurno INTEGER check (turnoDiurno = 1 or turnoDiurno = 0),
     turnoNoturno INTEGER check (turnoNoturno = 1 or turnoNoturno = 0),
     check (turnoNoturno != 0 or turnoDiurno != 0)
