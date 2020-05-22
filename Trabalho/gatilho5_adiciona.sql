@@ -1,6 +1,6 @@
 PRAGMA foreign_keys=ON;
 
-create view if not exists horarioSemanaEmCausa as select Dia_folga,Data_segunda,turnoDiurno,turnoNoturno,Hora,Data from Horario,NEW,Cirurgia where NEW.Cirurgia = Cirurgia.idServico and NEW.Enfermeiro = Horario.idFuncionario and (cast(strftime('%J',Cirurgia.Data) as int) - cast(strftime('%J',Horario.Data_segunda) as int)) < 7;
+create view if not exists horarioSemanaEmCausa as select Dia_folga,Data_segunda,turnoDiurno,turnoNoturno,Hora,Data from Horario,Cirurgia where NEW.Cirurgia = Cirurgia.idServico and NEW.Enfermeiro = Horario.idFuncionario and (cast(strftime('%J',Cirurgia.Data) as int) - cast(strftime('%J',Horario.Data_segunda) as int)) < 7;
 
 create view if not exists trabalhoTurno as select * from horarioSemanaEmCausa where (((cast(strftime('%H',horarioSemanaEmCausa.Hora)as int) > 20 or cast(strftime('%H',horarioSemanaEmCausa.Hora)as int) < 6) and horarioSemanaEmCausa.turnoNoturno = 1) or ((cast(strftime('%H',horarioSemanaEmCausa.Hora)as int) > 6 and cast(strftime('%H',horarioSemanaEmCausa.Hora)as int) < 20) and horarioSemanaEmCausa.turnoDiurno = 1));
 
