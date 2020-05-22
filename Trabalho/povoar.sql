@@ -166,13 +166,13 @@ INSERT INTO Servico VALUES(20, '2019-06-25','17:40',98,5);
 INSERT INTO Servico VALUES(21, '2019-06-26','17:00',156,7);
 INSERT INTO Servico VALUES(22, '2019-08-25','12:40',80,3);
 INSERT INTO Servico VALUES(23, '2019-11-11','17:15',28,2);
-INSERT INTO Servico VALUES(24, '2019-06-12','9:40',88,13);
+INSERT INTO Servico VALUES(24, '2019-06-12','09:40',88,13);
 INSERT INTO Servico VALUES(25, '2019-04-23','10:40',250,6);
 INSERT INTO Servico VALUES(26, '2019-07-29','17:30',192,4);
 INSERT INTO Servico VALUES(27, '2019-12-25','15:30',68,11);
 INSERT INTO Servico VALUES(28, '2019-12-15','11:00',130,10);
 INSERT INTO Servico VALUES(29, '2019-08-31','10:40',150,5);
-INSERT INTO Servico VALUES(30, '2019-02-28','7:20',174,7);
+INSERT INTO Servico VALUES(30, '2019-02-28','07:20',174,7);
 INSERT INTO Servico VALUES(31, '2019-03-28','19:30',20,10); 
 
 INSERT INTO Consulta VALUES(9, '2019-05-10','14:30',20,4,'Arritmia','Fadiga,Falta de ar',9);
@@ -181,8 +181,8 @@ INSERT INTO Consulta VALUES(3, '2019-04-05', '09:00', 35,7,'Lesão Ocular','Dor 
 INSERT INTO Consulta VALUES(2, '2019-12-31', '10:00', 40,2,'Cancro do estômago','Dores abdominais',20);
 INSERT INTO Consulta VALUES(14, '2019-03-11','13:20',73,8,'Nariz partido','Dor no nariz',2);
 INSERT INTO Consulta VALUES(15, '2019-09-11','13:45',44,6,'Depressão','Angústia, Falta de ar',17);
-INSERT INTO Consulta VALUES(16, '2018-12-25','9:20',121,7,'Apneia de sono','Falta de ar, Insónias',21);
-INSERT INTO Consulta VALUES(17, '2019-08-12','8:00',73,11,'Leucemia','Dores na coluna',20);
+INSERT INTO Consulta VALUES(16, '2018-12-25','09:20',121,7,'Apneia de sono','Falta de ar, Insónias',21);
+INSERT INTO Consulta VALUES(17, '2019-08-12','08:00',73,11,'Leucemia','Dores na coluna',20);
 INSERT INTO Consulta VALUES(18, '2019-01-11','11:15',200,13,'Asma','Dificuldade em respirar, Tosse',7);
 INSERT INTO Consulta VALUES(19, '2019-07-20','13:10',120,5,'Tumor cerebral','Dores de cabeça',19);
 INSERT INTO Consulta VALUES(31, '2019-03-28','19:30',20,10,'Inconclusivo','Tonturas, fraqueza, dormência',21); 
