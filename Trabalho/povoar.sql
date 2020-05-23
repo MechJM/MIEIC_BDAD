@@ -158,8 +158,8 @@ INSERT INTO Servico VALUES(12, '2019-05-09','16:30',64,12);
 INSERT INTO Servico VALUES(13, '2019-05-17','14:00',37,13);
 INSERT INTO Servico VALUES(14, '2019-03-11','13:20',73,8);
 INSERT INTO Servico VALUES(15, '2019-09-11','13:45',44,6);
-INSERT INTO Servico VALUES(16, '2018-12-25','9:20',121,7);
-INSERT INTO Servico VALUES(17, '2019-08-12','8:00',73,11);
+INSERT INTO Servico VALUES(16, '2018-12-25','09:20',121,7);
+INSERT INTO Servico VALUES(17, '2019-08-12','08:00',73,11);
 INSERT INTO Servico VALUES(18, '2019-01-11','11:15',200,13);
 INSERT INTO Servico VALUES(19, '2019-07-20','13:10',120,13);
 INSERT INTO Servico VALUES(20, '2019-06-25','17:40',98,5);
@@ -201,13 +201,13 @@ INSERT INTO Cirurgia VALUES(23, '2019-11-11','17:15',28,2,'Colocação de lente'
 INSERT INTO Analise VALUES(1, '2019-05-24', '14:00', 100, 4,'TAC','Deformações no coração','2019-06-09',9,9);
 INSERT INTO Analise VALUES(5, '2019-04-17','22:00', 80,6,'TAC','Não existem estenoses aórticas','2019-04-19',14,10);
 INSERT INTO Analise VALUES(6, '2019-05-05','20:00',80,8,'Radiografia','O osso está a regenerar como previsto','2019-05-07',15,14);
-INSERT INTO Analise VALUES(24, '2019-06-12','9:40',88,13,'Espirometria','Asma testada como positiva','2019-06-26,',20,18);
+INSERT INTO Analise VALUES(24, '2019-06-12','09:40',88,13,'Espirometria','Asma testada como positiva','2019-06-26,',20,18);
 INSERT INTO Analise VALUES(25, '2019-04-23','10:40',250,6,'Análise ao sangue','Nivéis de glicose elevados','2019-05-04',19,10);
 INSERT INTO Analise VALUES(26, '2019-07-29','17:30',192,4,'Ecocardiograma','Diagnosticada a insuficiência cardíaca','2019-08-19',4,9);
 INSERT INTO Analise VALUES(27, '2019-12-25','15:30',68,11,'Análise ao sangue','Nivéis de ferro e glicose muito baixos','2020-01-01',5,17);
 INSERT INTO Analise VALUES(28, '2019-12-15','11:00',130,10,'Glicemia','Diabetes diagnosticado','2019-12-25',7,31);
 INSERT INTO Analise VALUES(29, '2019-08-31','10:40',150,5,'ADAS-COG','Alzheimer não detetado','2019-09-11',9,19);
-INSERT INTO Analise VALUES(30, '2019-02-28','7:20',174,7,'TFP','A capacidade expiratória está muito abaixo do normal','2019-03-10',12,16);
+INSERT INTO Analise VALUES(30, '2019-02-28','07:20',174,7,'TFP','A capacidade expiratória está muito abaixo do normal','2019-03-10',12,16);
 
 INSERT INTO Realizam VALUES(2,4);
 INSERT INTO Realizam VALUES(7,7);
