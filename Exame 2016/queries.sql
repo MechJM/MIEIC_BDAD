@@ -1,2 +1,5 @@
 --select Estudante.nome as Estudante,Curso.nome as Curso from Estudante,Curso where anoCurricular = 3 and Estudante.curso = Curso.id;
-select Estudante.nome as nome from Estudante, (select Estudante.ID as ID, count(*) as countAm from Estudante, Amizade where (Estudante.ID = Amizade.ID1) group by Amizade.ID1) as filtered where Estudante.ID = filtered.ID and filtered.countAm > 3;
+--select Estudante.nome as nome from Estudante, (select Estudante.ID as ID, count(*) as countAm from Estudante, Amizade where (Estudante.ID = Amizade.ID1) group by Amizade.ID1) as filtered where Estudante.ID = filtered.ID and filtered.countAm > 3;
+--select Estudante.nome as Nome, Estudante.anoCurricular as "Ano Curricular" from Estudante,(select Estudante.ID from ) amigosDoAno where ;
+--
+select Estudante.nome as nome, Estudante.anoCurricular as anoCurricular from Estudante,(select numAmigosPosEstud.studID as ID, max(numAmigosPosEstud.numAmigos) from (select Estudante.ID as studID,count(*) as numAmigos from Estudante, Amizade where Estudante.ID = Amizade.ID1 group by Amizade.ID1) as numAmigosPosEstud) as maxAmigos where Estudante.ID = maxAmigos.ID;
